@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    
+<string name="app_name">One Photo Every Minute</string>
+<string name="time_between">Time between photos:</string>
+<string name="minutes">Minutes</string>
+<string name="seconds">Seconds</string>
+<string name="start">Start Taking Photos</string>
+<string name="stop">Stop Taking Photos</string>
+</resources>

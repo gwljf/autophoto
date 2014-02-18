@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+  xmlns:android="http://schemas.android.com/apk/res/android"
+  android:orientation="vertical"
+  android:layout_width="fill_parent"
+  android:layout_height="fill_parent">
+  
+  <TextView
+    android:text="@string/time_between"
+    android:id="@+id/TextView02"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"></TextView>
+
+  <LinearLayout
+    android:orientation="horizontal"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content">
+
+    <LinearLayout
+      android:orientation="vertical"
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content">
+      <TextView
+        android:text="@string/seconds"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"></TextView>
+      <com.dantasse.onephotoeveryminute.uielement.NumberPicker
+        android:id="@+id/SecondPicker"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+
+          <Button
+              android:id="@+id/upload"
+              android:layout_width="wrap_content"
+              android:layout_height="wrap_content"
+              android:text="Upload" />
+
+      </com.dantasse.onephotoeveryminute.uielement.NumberPicker>
+    </LinearLayout>
+  </LinearLayout>
+
+  <Button
+    android:text="@string/start"
+    android:id="@+id/StartButton"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"></Button>
+  <Button
+    android:text="@string/stop"
+    android:id="@+id/StopButton"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:enabled="false"></Button>
+  <TextView
+    android:text=""
+    android:id="@+id/TextView01"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"></TextView>
+  <!--
+    <ImageView android:id="@+id/ImageView01" android:layout_width="fill_parent"
+    android:layout_height="fill_parent"> </ImageView>
+  -->
+  <TextView
+    android:text=""
+    android:id="@+id/OutputDirText"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content">
+  </TextView>
+  <TextView
+    android:text=""
+    android:id="@+id/ErrorText"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content">
+  </TextView>
+
+  <SurfaceView
+    android:id="@+id/CameraSurface"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:layout_weight="1">
+  </SurfaceView>
+</LinearLayout>
